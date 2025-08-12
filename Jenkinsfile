@@ -14,9 +14,9 @@ pipeline {
 
         stage('Set Up Python Virtual Environment') {
             steps {
-                bat '"C:\\Users\\your-username\\AppData\\Local\\Programs\\Python\\Python310\\python.exe" -m venv venv'
+                bat '"C:\Users\happy\AppData\Local\Microsoft\WindowsApps\python.exe" -m venv venv'
                 bat '.\\venv\\Scripts\\python.exe -m pip install --upgrade pip'
-                bat '.\\venv\\Scripts\\pip install -r requirements.txt'
+                bat '.\\venv\\Scripts\\pip install numpy flask pandas tensorflow'
             }
         }
 
